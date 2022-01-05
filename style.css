@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.cont-first{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.cont-first .btn-primary{
+  padding: 10px 15px;
+  background: #3576B3;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+.btn-primary:hover{
+  background: #115697;
+}
+.cont-first i{
+  font-size: 40px;
+}
+.menu{
+  margin: 30px 0;
+}
+.menu ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu ul li{
+  list-style: none;
+}
+.menu ul li a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  color: #000;
+  font-weight: 600;
+  padding-bottom: 7px;
+  border-bottom: 2px solid transparent;
+}
+.menu ul li a:hover{
+  border-bottom: 2px solid #000;
+}
+.article-banner{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://static.scientificamerican.com/espanol/cache/file/8C0159FE-E05A-448F-B8D8925EF05DA760_source.jpg?w=590&h=800&E48965C2-A766-4766-86EF3FBE8A03D69B);
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.article-banner h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.fecha{
+  margin-bottom: 20px;
+}
+.article-information{
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+.social-media{
+  width: 200px;
+  height: 150px;
+  border: 3px solid #000;
+  display:flex;
+  flex-wrap: wrap;
+}
+.social-media i{
+  font-size: 20px;
+  padding: 20px;
+}
+.social-media i:hover{
+  background: rgb(221, 218, 218);
+}
+.about-information{
+  width: 75%;
+}
+@media (max-width: 900px) {
+  .article-information{
+    flex-direction: column;
+  }
+  .social-media{
+    margin: 0 auto 10px auto;
+  }
+  .about-information{
+    width: 100%;
+  }
+}
